@@ -1,0 +1,45 @@
+﻿
+
+-- Doble guion para comentarios
+
+/*
+linea de de comentarios
+linea de comentarios
+*/
+
+-- creacion de de la baes de datos BANCOUH
+create database BancoUH
+
+use BancoUH
+
+-- creacion de las tabla
+
+create table Usuarios
+(
+   correo varchar(50) primary key,
+   clave varchar(50) not null,
+   nombre varchar(100)
+)
+
+
+-- Insertar usuarios
+Insert into USuarios (correo, clave, nombre) values (@correo,@clave,@nombre'),
+                                                    ('Jose@uh.com','456','Jose Ramirez')
+Insert into USuarios (correo, clave, nombre) values ('Suana@uh.com','487','Susana Jimenez')
+
+-- consultar usuarios
+
+Select * from usuarios
+Select correo, clave, nombre from usuarios
+select correo from usuarios
+select * from usuarios where correo = 'maria@uh.com' -- filtro se usa el la palabra "where"
+
+-- Actualizar usuarios
+
+update Usuarios set correo = 'Karla@uh.com', clave='999' where correo = 'Karka@uh.com'
+
+-- borrar usuarios
+
+delete usuarios where correo = 'jose@uh.com'
+
+                                                   
